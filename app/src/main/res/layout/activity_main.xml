@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="30dp"
-            android:text="  Search for dishes or restaurants"
+            android:hint="Search for dishes or restaurants"
             android:textColor="#aabbcc" />
     </LinearLayout>
 
@@ -58,26 +58,25 @@
             android:textSize="20dp" />
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+    <HorizontalScrollView android:layout_height="wrap_content"
+        android:layout_width="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="94dp"
+                android:layout_width="80dp"
                 android:layout_height="88dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="3dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/im1" />
 
+
             <ImageView
-                android:layout_width="94dp"
+                android:layout_width="120dp"
                 android:layout_height="88dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
@@ -89,16 +88,7 @@
                 android:layout_width="94dp"
                 android:layout_height="88dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/im3" />
-
-            <ImageView
-                android:layout_width="94dp"
-                android:layout_height="88dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="3dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/im4" />
@@ -113,8 +103,9 @@
                 android:src="@drawable/im5" />
         </LinearLayout>
 
-    </ScrollView>
 
+
+    </HorizontalScrollView>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="53dp"
@@ -123,32 +114,30 @@
         android:orientation="horizontal">
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/adm"
-            android:layout_width="66dp"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Pizza"
+            android:backgroundTint="#F4511E"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Burger"
             android:layout_marginLeft="50dp"
-            android:layout_marginRight="1dp"
-            android:background="#F4511E"
-            android:text="pizza" />
+            android:backgroundTint="#F4511E"
+            />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/sem"
-            android:layout_width="74dp"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#ffffff"
             android:layout_marginLeft="50dp"
-            android:layout_marginRight="1dp"
-            android:background="#F4511E"
-            android:text="Burger" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/vfm"
-            android:layout_width="66dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:background="#F4511E"
-            android:text="Salad" />
+            android:text="Salad"
+            android:backgroundTint="#F4511E"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -175,68 +164,33 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="88dp"
+                android:layout_width="474dp"
+                android:layout_height="271dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="50dp"
                 android:src="@drawable/im6" />
 
             <ImageView
-                android:layout_width="154dp"
-                android:layout_height="88dp"
+                android:layout_width="400dp"
+                android:layout_height="271dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="50dp"
                 android:src="@drawable/im7" />
 
-
             <ImageView
-                android:layout_width="180dp"
-                android:layout_height="88dp"
+                android:layout_width="400dp"
+                android:layout_height="271dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/im1" />
-
-            <ImageView
-                android:layout_width="94dp"
-                android:layout_height="88dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/im2" />
-
-            <ImageView
-                android:layout_width="94dp"
-                android:layout_height="88dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="1dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/im3" />
 
-            <ImageView
-                android:layout_width="94dp"
-                android:layout_height="88dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/im4" />
 
-            <ImageView
-                android:layout_width="94dp"
-                android:layout_height="88dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/im5" />
         </LinearLayout>
 
     </ScrollView>
